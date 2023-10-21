@@ -17,7 +17,7 @@ app.add_middleware(
 
 @app.get("/")
 async def root():
-    return {"message": APP_ENV}
+    return {"message": "Welcome To COG Underground!"}
 
 
 handler = Mangum(app)
