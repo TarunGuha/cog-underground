@@ -1,0 +1,9 @@
+bs4
+mangum
+dotenv
+pyclean
+uvicorn
+pydantic
+requests
+python-dotenv
+fastapi==0.99.0
