@@ -1,6 +1,6 @@
 def categorize_message(data):
     if bool(data.message):
-        return "main"
+        return "main_menu"
 
     else:
         choice = data.callback_query.get("data").split("_")[0]
