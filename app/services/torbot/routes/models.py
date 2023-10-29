@@ -1,7 +1,9 @@
 from uuid import UUID
 from datetime import datetime 
 from pydantic import BaseModel
-from typing import List, Optional
+from typing import List, Optional, Dict, Any
 
-class Sample(BaseModel):
-    input_param:  str | None = None
+class TelegramWebhook(BaseModel):
+    update_id:  int
+    message: dict | None = None
+    callback_query: dict | None = None
